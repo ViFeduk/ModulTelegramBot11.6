@@ -17,7 +17,7 @@ namespace ModulTelegramBot11._6.Controllers
         }
         public async Task HandleText(Message message, CancellationToken cancellationToken)
         {
-            await _tegramBotClient.SendTextMessageAsync(message.Chat.Id, "Ты направил мне какую-то хуйню. Мне нужен либо текст либо цифры а не остальное!!!", cancellationToken: cancellationToken);
+            await _tegramBotClient.SendTextMessageAsync(message.Chat.Id, "Ты направил мне что-то непонятное! Мне нужен либо текст либо цифры а не остальное!!!", cancellationToken: cancellationToken);
         }
     }
 }
